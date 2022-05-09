@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "938313203916",
+    "project_id": "thanhnhanshop-33af1",
+    "storage_bucket": "thanhnhanshop-33af1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938313203916:android:086fceebf694a63a004269",
+        "android_client_info": {
+          "package_name": "com.EEFood.EEFood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938313203916-4cjjq5q0t2madpl7vps4vpab2i0m1etv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.EEFood.EEFood",
+            "certificate_hash": "eea45b0ab43530743e45e8e166a78b6a8535a079"
+          }
+        },
+        {
+          "client_id": "938313203916-gt6h4rjjsgdjf08qeec8p2mqoj7rlftb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgDTZkbDX8cob5TUIK3gergp4844KIDJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938313203916-gt6h4rjjsgdjf08qeec8p2mqoj7rlftb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
