@@ -13,124 +13,71 @@
         android:background="@color/purple_200"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <LinearLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/image_product"
-            android:layout_width="150dp"
-            android:layout_height="200dp" />
-
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
         <LinearLayout
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:orientation="vertical">
+            android:layout_margin="5dp"
 
-            <TextView
-
-                android:id="@+id/txttensp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:maxLines="2"
-                android:text="Máy Tính Asus 2020"
-                android:textColor="#ff0000"
-                android:textSize="23sp" />
-
-            <TextView
-                android:id="@+id/txtgiatien"
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="255,555 đ"
-                android:textColor="#008000"
-                android:textSize="20sp" />
-
-            <TextView
-
-                android:id="@+id/txtthuonghieu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:maxLines="2"
-                android:layout_marginTop="10dp"
-                android:text="Asus"
-                android:textColor="#000000"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/txtbaohanh"
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:text="Bảo hành 12 tháng kể từ khi mua"
-                android:layout_marginTop="10dp"
-                android:textColor="#4b0082"
-                android:textSize="14sp" />
+            android:orientation="horizontal">
 
             <ImageView
-                android:layout_marginTop="10dp"
-                android:id="@+id/img_thongtin"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="10dp"
-                android:background="@drawable/real"
-                android:scaleType="fitXY" />
+                android:id="@+id/image_product"
+                android:layout_width="150dp"
+                android:layout_height="200dp" />
 
-            <TextView
-                android:layout_marginTop="5dp"
-                android:id="@+id/text_thongtin"
-                android:layout_width="80dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Cam kết hàng chính hãng 100%"
-                android:textAlignment="center"
-                android:textColor="@color/black" />
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="-105dp"
-                android:background="@drawable/momo"
-                android:scaleType="fitXY" />
+                <TextView
 
-            <TextView
-                android:layout_marginTop="6dp"
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="80dp"
-                android:text="Thanh toán momo tiện lợi"
-                android:textAlignment="center"
-                android:textColor="@color/black" />
+                    android:id="@+id/txttensp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="Máy Tính Asus 2020"
+                    android:textColor="@color/black"
+                    android:textSize="23sp"
+                    android:fontFamily="@font/poppins_bold"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đơn giá: "
+                        android:layout_marginTop="10dp"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/txtgiatien"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="255,555 đ"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
 
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="190dp"
-                android:layout_marginTop="-105dp"
-                android:background="@drawable/money"
-                android:scaleType="fitXY" />
 
-            <TextView
-                android:layout_marginTop="6dp"
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="170dp"
-                android:text="Đổi trả trong vòng 7 ngày"
-                android:textAlignment="center"
-                android:textColor="@color/black" />
-
+            </LinearLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 
 
     <ScrollView
@@ -160,5 +107,4 @@
         android:layout_marginBottom="5dp"
         android:elevation="5dp"
         android:text="Thêm vào giỏ hàng" />
-
 </LinearLayout>

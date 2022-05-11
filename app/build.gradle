@@ -48,5 +48,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-storage:20.0.0'
     implementation 'de.hdodenhof:circleimageview:3.1.0' // thong tin ca nhan
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+    def lottieVersion = "3.4.0"
+    implementation "com.airbnb.android:lottie:$lottieVersion"// logo
+
 }
 apply plugin: 'com.google.gms.google-services' // firebase

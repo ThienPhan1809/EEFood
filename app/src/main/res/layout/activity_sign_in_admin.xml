@@ -4,24 +4,34 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/res00">
+    >
     <ImageView
         android:id="@+id/back"
         android:scaleX="-1"
         android:src="@drawable/ic_baseline_navigate_next_24"
         android:layout_width="42dp"
         android:layout_height="42dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in to Admin"
+        android:layout_marginTop="20dp"
+        android:textSize="40dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"/>
 
-    <ImageView
-
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="120dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:textSize="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="50sp"/>
 
 
     <androidx.cardview.widget.CardView
-
         android:layout_width="match_parent"
         android:layout_height="370dp"
         android:layout_margin="15dp"

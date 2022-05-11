@@ -11,7 +11,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="480dp"
-        android:background="@drawable/roud"
         android:orientation="vertical">
 
         <ImageView
@@ -19,13 +18,14 @@
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_gravity="end"
-            android:background="#008000"
+            android:background="@color/black"
             android:src="@android:drawable/ic_menu_close_clear_cancel" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp">
+            android:layout_margin="10dp"
+            app:boxBackgroundMode="none">
 
 
             <EditText
@@ -40,7 +40,8 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp">
+            android:layout_margin="10dp"
+            app:boxBackgroundMode="none">
 
             <EditText
                 android:id="@+id/editsdt"
@@ -55,7 +56,8 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp">
+            android:layout_margin="10dp"
+            app:boxBackgroundMode="none">
 
             <EditText
                 android:id="@+id/editdiachi"
@@ -79,7 +81,7 @@
             android:layout_height="3dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:background="#008000" />
+            android:background="@color/black" />
 
         <TextView
             android:id="@+id/txttongtien"

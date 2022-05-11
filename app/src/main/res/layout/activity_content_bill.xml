@@ -31,49 +31,102 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:maxLines="2"
-                android:text="Máy Tính Asus 2020"
-                android:textColor="#ff0000"
-                android:textSize="18sp" />
-            <TextView
-
-                android:id="@+id/txthoten"
+                android:text="Ma HD"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold"/>
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:maxLines="2"
-                android:text="Nhom 08"
-                android:textColor="#000000"
-                android:textSize="18sp" />
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:textStyle="bold"
+                    android:text="Nhóm: "
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/txthoten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="08"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
 
 
-
-            <TextView
-
-                android:id="@+id/txtdiachi"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:maxLines="2"
-                android:text="141 dien bien phu"
-                android:textColor="#008000"
-                android:textSize="18sp" />
+                android:orientation="horizontal">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:textStyle="bold"
+                    android:text="Địa chỉ: "
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+                <TextView
 
-                android:id="@+id/txtsdt"
+                    android:id="@+id/txtdiachi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="141 dien bien phu"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:maxLines="2"
-                android:text="012345678"
-                android:textColor="#008000"
-                android:textSize="18sp" />
-            <TextView
-
-                android:id="@+id/txttongtien"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:textStyle="bold"
+                    android:text="SĐT: "
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/txtsdt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="012345678"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:maxLines="2"
-                android:text="1000000Đ"
-                android:textColor="	#000000"
-                android:textSize="18sp" />
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:textStyle="bold"
+                    android:text="Đơn Gía: "
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+                <TextView
+
+                    android:id="@+id/txttongtien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="1000000Đ"
+                    android:textColor="	#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
             <TextView
 
                 android:id="@+id/txtrangthaidonhang"
@@ -92,7 +145,7 @@
 
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:background="@color/purple_200" />
+        android:background="@color/black" />
 
      <androidx.recyclerview.widget.RecyclerView
          android:layout_width="match_parent"

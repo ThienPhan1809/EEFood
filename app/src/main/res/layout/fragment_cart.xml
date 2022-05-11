@@ -28,7 +28,7 @@
         android:elevation="8dp"
         android:text="Thanh Toán" />
     <ProgressBar
-
+        android:indeterminateTint="@color/black"
         android:id="@+id/progressbar"
         android:layout_centerInParent="true"
         android:layout_width="42dp"

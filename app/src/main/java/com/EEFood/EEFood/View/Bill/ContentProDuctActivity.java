@@ -24,7 +24,7 @@ import java.text.NumberFormat;
 public class ContentProDuctActivity extends AppCompatActivity implements GioHangView {
     private Intent intent;
     private SanPhamModels sanPhamModels;
-    private TextView txttensp, txtgiatien, txtmota, txtnsx, txtbaohanh;
+    private TextView txttensp, txtgiatien, txtmota;
     private Toolbar toolbar;
     private ImageView hinhanh;
     private Button btndathang;
@@ -51,9 +51,7 @@ public class ContentProDuctActivity extends AppCompatActivity implements GioHang
         });
         intent=getIntent();
         sanPhamModels = (SanPhamModels) intent.getSerializableExtra("SP");
-        txtnsx.setText("Nhà sản suất: "+sanPhamModels.getNhasanxuat());
         txtmota.setText("Mô tả: "+sanPhamModels.getMota());
-        txtbaohanh.setText("Bảo hành: "+sanPhamModels.getBaohanh());
         txttensp.setText("Tên sản phẩm: "+sanPhamModels.getTensp());
         txtgiatien.setText("Giá tiền: "+NumberFormat.getNumberInstance().format(sanPhamModels.getGiatien()));
         Picasso.get().load(sanPhamModels.getHinhanh()).into(hinhanh);
@@ -69,11 +67,8 @@ public class ContentProDuctActivity extends AppCompatActivity implements GioHang
 
     private void InitWidget() {
         toolbar = findViewById(R.id.toolbar);
-        txtbaohanh = findViewById(R.id.txtbaohanh);
         txtgiatien = findViewById(R.id.txtgiatien);
         txtmota=findViewById(R.id.txtmota);
-        txtnsx=findViewById(R.id.txtthuonghieu);
-        txtbaohanh=findViewById(R.id.txtbaohanh);
         txttensp=findViewById(R.id.txttensp);
         hinhanh=findViewById(R.id.image_product);
         btndathang=findViewById(R.id.btndathang);

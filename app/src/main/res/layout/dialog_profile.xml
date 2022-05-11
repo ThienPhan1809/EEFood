@@ -16,17 +16,25 @@
          android:src="@android:drawable/ic_menu_close_clear_cancel"
          android:layout_width="32dp"
          android:layout_height="32dp"/>
-     <EditText
-         android:layout_marginLeft="10dp"
-         android:layout_marginRight="10dp"
-         android:singleLine="true"
-         android:textSize="14sp"
-         android:gravity="center"
-         android:hint="Nhập"
-         android:minHeight="55dp"
-         android:id="@+id/editvalue"
+     <com.google.android.material.textfield.TextInputLayout
          android:layout_width="match_parent"
-         android:layout_height="wrap_content"/>
+         android:layout_height="wrap_content"
+         app:boxBackgroundMode="none"
+         android:layout_gravity="center">
+         <EditText
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             android:singleLine="true"
+             android:textSize="14sp"
+             android:gravity="center"
+             android:background="@drawable/button"
+             android:hint="Nhập"
+             android:minHeight="55dp"
+             android:id="@+id/editvalue"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+     </com.google.android.material.textfield.TextInputLayout>
+
      <Button
          android:elevation="5dp"
          android:id="@+id/btnxacnhan"
