@@ -70,7 +70,6 @@ public class SanPhamAdapter  extends RecyclerView.Adapter<SanPhamAdapter.ViewHod
             }
         });
         if(type==1){
-            holder.txtbaohanh.setText(sanPhamModels.getBaohanh());
             holder.txtsoluong.setText(sanPhamModels.getSoluong()+"");
         }
 
@@ -82,7 +81,7 @@ public class SanPhamAdapter  extends RecyclerView.Adapter<SanPhamAdapter.ViewHod
     }
 
     public class ViewHodler extends RecyclerView.ViewHolder implements  View.OnClickListener {
-        TextView txttensp,txtgiasp,txtbaohanh,txtsoluong;
+        TextView txttensp,txtgiasp,txtsoluong;
         ImageView hinhanh;
         SetOnItemClick itemClick;
 
