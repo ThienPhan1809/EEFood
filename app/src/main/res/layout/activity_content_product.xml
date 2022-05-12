@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <androidx.appcompat.widget.Toolbar
@@ -14,14 +15,13 @@
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp">
         <LinearLayout
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-
             android:orientation="horizontal">
 
             <ImageView
@@ -99,12 +99,9 @@
     <Button
         android:id="@+id/btndathang"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_marginLeft="80dp"
-        android:background="@drawable/button"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="80dp"
-        android:layout_marginBottom="5dp"
-        android:elevation="5dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border10"
         android:text="Thêm vào giỏ hàng" />
 </LinearLayout>

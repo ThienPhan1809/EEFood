@@ -85,6 +85,26 @@ public class SanPhamModels implements Serializable {
             }
         });
     }
+    //san pham thong thường
+    public  void  HandlegetDataSanPhamAll(){
+        db.collection("SanPham").
+                get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+            @Override
+            public void onSuccess(@NonNull QuerySnapshot queryDocumentSnapshots) {
+                if(queryDocumentSnapshots.size()>0){
+                    for(QueryDocumentSnapshot d : queryDocumentSnapshots){
+
+                        callback.getDataSanPham(d.getId(),d.getString("tensp"),
+                                d.getLong("giatien"),d.getString("hinhanh"),
+                                d.getString("loaisp"),d.getString("mota"),
+                                d.getLong("soluong"),d.getString("nhasanxuat"),
+                                d.getLong("type"),d.getString("baohanh"));
+                    }
+                }
+
+            }
+        });
+    }
     // sp noi bat
     public  void  HandlegetDataSanPhamNoiBat(){
         db.collection("SanPham").
@@ -109,6 +129,10 @@ public class SanPhamModels implements Serializable {
 
     public String getIdsp() {
         return idsp;
+    }
+
+    public void setType(long type) {
+        this.type = type;
     }
 
     public long getType() {

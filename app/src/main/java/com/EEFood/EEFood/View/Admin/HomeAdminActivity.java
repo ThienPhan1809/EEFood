@@ -32,9 +32,7 @@ public class HomeAdminActivity  extends AppCompatActivity implements View.OnClic
 
             case R.id.cThongKe: startActivity(new Intent( HomeAdminActivity.this,ChartBillActivity.class));break;
             case R.id.cSignOut: finish();break;
-            case R.id.imgdangsanpham: startActivity(new Intent( HomeAdminActivity.this, dangsanphamActivity.class));break;
-
-
+            case R.id.imgdangsanpham: startActivity(new Intent( HomeAdminActivity.this, ProductActivity.class));break;
 
         }
     }

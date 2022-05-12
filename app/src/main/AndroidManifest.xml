@@ -21,13 +21,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.EEFood.EEFood.dangsanphamActivity"
+            android:name=".View.Admin.ProductActivity"
             android:exported="false" />
         <activity
-            android:name="com.EEFood.EEFood.View.Bill.CartActivity"
+            android:name=".dangsanphamActivity"
+            android:exported="true" />
+        <activity
+            android:name=".View.Bill.CartActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.EEFood.EEFood.View.Bill.ContentBillAdMinActivity"
+            android:name=".View.Bill.ContentBillAdMinActivity"
             android:screenOrientation="portrait" />
 
         <meta-data
@@ -38,43 +41,43 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity
-            android:name="com.EEFood.EEFood.View.HomeActivity"
+            android:name=".View.HomeActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.EEFood.EEFood.View.Bill.ContentProDuctActivity"
+            android:name=".View.Bill.ContentProDuctActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.EEFood.EEFood.View.Admin.SignInAdminActivity"
+            android:name=".View.Admin.SignInAdminActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.EEFood.EEFood.View.ContactActivity"
+            android:name=".View.ContactActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.EEFood.EEFood.View.Admin.ChartBillActivity"
+            android:name=".View.Admin.ChartBillActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.EEFood.EEFood.View.Bill.ContentBillActivity"
+            android:name=".View.Bill.ContentBillActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.EEFood.EEFood.View.SearchActivity"
+            android:name=".View.SearchActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.EEFood.EEFood.View.ThongKeDanhMucActivity"
+            android:name=".View.ThongKeDanhMucActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.EEFood.EEFood.View.Admin.HomeAdminActivity"
+            android:name=".View.Admin.HomeAdminActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.EEFood.EEFood.View.Admin.BillADMiNActivity"
+            android:name=".View.Admin.BillADMiNActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.EEFood.EEFood.View.Account.SignInActivity"
+            android:name=".View.Account.SignInActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.EEFood.EEFood.View.Account.SignUpActivity"
+            android:name=".View.Account.SignUpActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.EEFood.EEFood.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
