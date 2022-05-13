@@ -12,7 +12,7 @@
               <item
                   android:id="@+id/danhmuc"
                   android:icon="@drawable/ic_baseline_menu_24"
-                  android:title="Danh Mục"/>
+                  android:title="Danh Mục" />
               <item
                   android:id="@+id/your_cart"
                   android:icon="@drawable/ic_shopping_cart_black_24dp"

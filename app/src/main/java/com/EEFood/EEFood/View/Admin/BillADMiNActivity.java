@@ -3,6 +3,7 @@ package com.EEFood.EEFood.View.Admin;
 import android.app.Dialog;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
@@ -24,6 +25,7 @@ import com.EEFood.EEFood.R;
 import java.util.ArrayList;
 
 public class BillADMiNActivity extends AppCompatActivity implements HoaDonView {
+
     private Toolbar toolbar;
     private RecyclerView rcvBill;
     private  String[] s = {"Tất cả","Đang xử lý","Đang giao hàng","Giao hàng thành công","Hủy hàng"};
@@ -34,6 +36,7 @@ public class BillADMiNActivity extends AppCompatActivity implements HoaDonView {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_bill_admin);
         spinner = findViewById(R.id.spiner);
         toolbar = findViewById(R.id.toolbar);

@@ -52,10 +52,10 @@ public class HoaDonAdapter extends RecyclerView.Adapter<HoaDonAdapter.ViewHodler
 
         HoaDonModels sanPhamModels = arrayList.get(position);
 
-        holder.txthoten.setText("Họ tên : "+sanPhamModels.getHoten());
-        holder.txtdiachi.setText("Địa chỉ : "+sanPhamModels.getDiachi());
-        holder.txtsdt.setText("Số điện thoại : "+sanPhamModels.getSdt());
-        holder.txttongtien.setText("Tổng tiền :"+NumberFormat.getInstance().format(sanPhamModels.getTongtien()) +" Đ");
+        holder.txthoten.setText(sanPhamModels.getHoten());
+        holder.txtdiachi.setText(sanPhamModels.getDiachi());
+        holder.txtsdt.setText(sanPhamModels.getSdt());
+        holder.txttongtien.setText(NumberFormat.getInstance().format(sanPhamModels.getTongtien()) +" Đ");
         holder.txtngaydat.setText(sanPhamModels.getNgaydat());
 
         holder.SetOnItem(new SetOnItemClick() {

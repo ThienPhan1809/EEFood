@@ -8,6 +8,7 @@ import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -20,6 +21,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.navigation.NavigationView;
@@ -39,12 +42,13 @@ import com.EEFood.EEFood.View.FragMent.FragMent_ProFile;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class HomeActivity  extends AppCompatActivity implements FragMent_Home.FragMent_HomeListener {
+public class HomeActivity  extends AppCompatActivity implements FragMent_Home.FragMent_HomeListener{
     private NavigationView navigationView;
     private Toolbar toolbar;
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle toggle;
     private Fragment fm;
+    private Fragment fgBill,fgProfile;
     private FirebaseAuth firebaseAuth;
     private EditText editsearch;
     private TextView tvusername,tvemail;
@@ -60,6 +64,7 @@ public class HomeActivity  extends AppCompatActivity implements FragMent_Home.Fr
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_home);
         InitWidget();
         Init();
@@ -108,6 +113,7 @@ public class HomeActivity  extends AppCompatActivity implements FragMent_Home.Fr
         fm = new FragMent_Home();
         getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,fm).commit();
 
+
          //Check user phân quyền tk đang nhap va chua dang nhap
          firebaseAuth = FirebaseAuth.getInstance();
         FirebaseUser f = firebaseAuth.getCurrentUser();
@@ -119,7 +125,10 @@ public class HomeActivity  extends AppCompatActivity implements FragMent_Home.Fr
             navigationView.inflateMenu(R.menu.menu_dashboard);
         }
 
-
+       
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fgBill= new FragMent_Bill();
+        fgProfile= new FragMent_ProFile();
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) { //ánh xạ view và bắt sự kiện
@@ -127,9 +136,9 @@ public class HomeActivity  extends AppCompatActivity implements FragMent_Home.Fr
                     case  R.id.home: fm = new FragMent_Home();break;
                     case  R.id.dangnhap:startActivity(new Intent( HomeActivity.this, SignInActivity.class));break;
                     case  R.id.lienhe:startActivity(new Intent( HomeActivity.this, ContactActivity.class));break;
-                    case  R.id.your_bill:fm=new FragMent_Bill();break;
+                    case  R.id.your_bill:fragmentTransaction.replace(R.id.drawerlayout,fgBill).commit();break;
                     case  R.id.your_cart:startActivity(new Intent(HomeActivity.this, CartActivity.class));break;
-                    case  R.id.your_profile:fm = new FragMent_ProFile();break;
+                    case  R.id.your_profile:fragmentTransaction.replace(R.id.drawerlayout,fgProfile).commit();break;
                     case  R.id.signout:FirebaseAuth.getInstance().signOut();startActivity(new Intent(HomeActivity.this,SignInActivity.class));finish();break;
                     case R.id.danhmuc: startActivity(new Intent( HomeActivity.this,ThongKeDanhMucActivity.class));break;
                     case  R.id.thongtinungdung:fm=new ThongtinungdungFragment();break;

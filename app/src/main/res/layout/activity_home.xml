@@ -13,7 +13,7 @@
             android:id="@+id/toolbar"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             style="@style/ThemeOverlay.AppCompat.Dark"
-            android:background="@color/purple_200"
+            android:background="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <EditText
@@ -22,7 +22,6 @@
                 android:singleLine="true"
                 android:hint="Nhập tên sản phẩm"
                 android:textColor="#000000"
-                android:drawablePadding="10dp"
                 android:background="@drawable/button"
                 android:drawableLeft="@drawable/ic_baseline_search_24"
                 android:id="@+id/editSearch"
@@ -32,20 +31,22 @@
 
 
         </androidx.appcompat.widget.Toolbar>
-         <FrameLayout
-             android:id="@+id/framelayout"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"/>
+        <FrameLayout
+            android:id="@+id/framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
-        android:layout_width="330dp"
-        app:itemTextColor="@color/purple_200"
-        app:itemIconTint="@color/purple_200"
+        android:layout_width="280dp"
+        app:itemTextColor="@color/colorWhite"
+        app:itemIconTint="@color/black"
         app:menu="@menu/menu_dashboard"
+        android:background="@color/colorPrimary"
         android:layout_gravity="start"
         app:headerLayout="@layout/app_bar_main_screen"
         android:id="@+id/navigationview"
         android:layout_height="match_parent"/>
+
 
 </androidx.drawerlayout.widget.DrawerLayout>

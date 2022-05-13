@@ -3,6 +3,7 @@ package com.EEFood.EEFood.View.Bill;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -34,26 +35,27 @@ public class ContentProDuctActivity extends AppCompatActivity implements GioHang
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_content_product);
         InitWidget();
         Init();
     }
 
     private void Init() {
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Chi tiết sản phẩm");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+//        setSupportActionBar(toolbar);
+//        getSupportActionBar().setTitle("Chi tiết sản phẩm");
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                finish();
+//            }
+//        });
         intent=getIntent();
         sanPhamModels = (SanPhamModels) intent.getSerializableExtra("SP");
-        txtmota.setText("Mô tả: "+sanPhamModels.getMota());
-        txttensp.setText("Tên sản phẩm: "+sanPhamModels.getTensp());
-        txtgiatien.setText("Giá tiền: "+NumberFormat.getNumberInstance().format(sanPhamModels.getGiatien()));
+        txtmota.setText(sanPhamModels.getMota());
+        txttensp.setText(sanPhamModels.getTensp());
+        txtgiatien.setText(NumberFormat.getNumberInstance().format(sanPhamModels.getGiatien()));
         Picasso.get().load(sanPhamModels.getHinhanh()).into(hinhanh);
         gioHangPreSenter = new GioHangPreSenter(this);
         btndathang.setOnClickListener(new View.OnClickListener() {
@@ -66,7 +68,7 @@ public class ContentProDuctActivity extends AppCompatActivity implements GioHang
     }
 
     private void InitWidget() {
-        toolbar = findViewById(R.id.toolbar);
+//        toolbar = findViewById(R.id.toolbar);
         txtgiatien = findViewById(R.id.txtgiatien);
         txtmota=findViewById(R.id.txtmota);
         txttensp=findViewById(R.id.txttensp);

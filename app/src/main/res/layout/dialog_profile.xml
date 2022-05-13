@@ -28,7 +28,6 @@
              android:textSize="14sp"
              android:gravity="center"
              android:background="@drawable/button"
-             android:hint="Nhập"
              android:minHeight="55dp"
              android:id="@+id/editvalue"
              android:layout_width="match_parent"

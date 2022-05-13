@@ -142,7 +142,7 @@ public class dangsanphamActivity extends AppCompatActivity {
             edtSl.setText("");
             edtMt.setText("");
             image = "";
-            imageView.setImageResource(R.drawable.pl);
+            imageView.setImageResource(R.drawable.food);
         });
         findViewById(R.id.btn_save).setOnClickListener(view -> {
             if (!validate()) {

@@ -1,5 +1,6 @@
 package com.EEFood.EEFood.View.FragMent;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.LayoutInflater;
@@ -35,6 +36,13 @@ public class FragMent_Bill  extends Fragment  implements HoaDonView {
         view = inflater.inflate(R.layout.fragment_bill,container,false);
 
 
+        view.findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getContext(),HomeActivity.class);
+                startActivity(intent);
+            }
+        });
         rcvBill =view.findViewById(R.id.rcvBill);
         progressBar = view.findViewById(R.id.progressbar);
         hoaDonPreSenter = new HoaDonPreSenter(this);
@@ -58,8 +66,10 @@ public class FragMent_Bill  extends Fragment  implements HoaDonView {
 
             }
         };
+
         return  view;
     }
+
 
     @Override
     public void getDataHD(String id, String uid, String diachi, String hoten, String ngaydat, String phuongthuc, String sdt, Long tongtien,Long type) {
@@ -69,6 +79,7 @@ public class FragMent_Bill  extends Fragment  implements HoaDonView {
        rcvBill.setAdapter(hoaDonAdapter);
        progressBar.setVisibility(View.GONE);
     }
+
 
 
     @Override

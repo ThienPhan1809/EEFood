@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -49,16 +50,14 @@ public class ContentBillAdMinActivity extends AppCompatActivity implements GioHa
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_content_bill);
         InitWidget();
         Init();
     }
 
     private void Init() {
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Chi tiết hóa đơn");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
@@ -135,7 +134,6 @@ public class ContentBillAdMinActivity extends AppCompatActivity implements GioHa
     }
 
     private void InitWidget() {
-        toolbar = findViewById(R.id.toolbar);
         txtdiachi = findViewById(R.id.txtdiachi);
         txthoten = findViewById(R.id.txthoten);
         txtrangthai=findViewById(R.id.txtrangthaidonhang);

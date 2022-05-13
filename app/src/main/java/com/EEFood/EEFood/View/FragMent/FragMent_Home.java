@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
@@ -124,7 +125,7 @@ public class FragMent_Home  extends Fragment implements SanPhamView {
                                String nhasanxuat, Long type,String baohanh) {
         arr_sp.add(new SanPhamModels(id,tensp,giatien,hinhanh,loaisp,mota,soluong,nhasanxuat,type,baohanh));
         sanPhamAdapter = new SanPhamAdapter(getContext(),arr_sp);
-        rcvSP.setLayoutManager(new LinearLayoutManager(getContext(),RecyclerView.HORIZONTAL,false));
+        rcvSP.setLayoutManager(new GridLayoutManager(getContext(),1));
         rcvSP.setAdapter(sanPhamAdapter);
 
     }

@@ -2,167 +2,195 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        style="@style/ThemeOverlay.AppCompat.Dark"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/purple_200"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:orientation="horizontal">
-
-
-        <LinearLayout
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/back"
+            android:scaleX="-1"
+            android:src="@drawable/ic_baseline_navigate_next_24"
+            android:layout_width="42dp"
+            android:layout_height="42dp"/>
+        <TextView
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:orientation="vertical">
+            android:fontFamily="@font/poppins"
+            android:text="Chi Tiết Hóa Đơn"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
 
-            <TextView
 
-                android:id="@+id/txtmaHD"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:maxLines="2"
-                android:text="Ma HD"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:fontFamily="@font/poppins_bold"/>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:maxLines="2"
-                    android:textStyle="bold"
-                    android:text="Nhóm: "
-                    android:textColor="#000000"
-                    android:textSize="18sp" />
-                <TextView
-                    android:id="@+id/txthoten"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:maxLines="2"
-                    android:text="08"
-                    android:textColor="#000000"
-                    android:textSize="18sp" />
-            </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#F5F5F8">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+            android:background="#F5F5F8"
+            android:orientation="horizontal">
+
 
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
 
                 <TextView
+
+                    android:id="@+id/txtmaHD"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:maxLines="2"
-                    android:textStyle="bold"
-                    android:text="Địa chỉ: "
-                    android:textColor="#000000"
-                    android:textSize="18sp" />
-                <TextView
-
-                    android:id="@+id/txtdiachi"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:maxLines="2"
-                    android:text="141 dien bien phu"
+                    android:text="Ma HD"
                     android:textColor="@color/black"
-                    android:textSize="18sp" />
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:maxLines="2"
+                    android:textSize="18sp"
                     android:textStyle="bold"
-                    android:text="SĐT: "
-                    android:textColor="#000000"
-                    android:textSize="18sp" />
-                <TextView
-                    android:id="@+id/txtsdt"
+                    android:fontFamily="@font/poppins_bold"/>
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:maxLines="2"
-                    android:text="012345678"
-                    android:textColor="@color/black"
-                    android:textSize="18sp" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:textStyle="bold"
+                        android:text="Họ tên: "
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/txthoten"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text="08"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:maxLines="2"
-                    android:textStyle="bold"
-                    android:text="Đơn Gía: "
-                    android:textColor="#000000"
-                    android:textSize="18sp" />
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:textStyle="bold"
+                        android:text="Địa chỉ: "
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                    <TextView
+
+                        android:id="@+id/txtdiachi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text="141 dien bien phu"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:textStyle="bold"
+                        android:text="SĐT: "
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/txtsdt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text="012345678"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:textStyle="bold"
+                        android:text="Đơn Gía: "
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                    <TextView
+
+                        android:id="@+id/txttongtien"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text="1000000Đ"
+                        android:textColor="	#000000"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
                 <TextView
 
-                    android:id="@+id/txttongtien"
+                    android:id="@+id/txtrangthaidonhang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:maxLines="2"
-                    android:text="1000000Đ"
+                    android:text="Đang xử lý"
                     android:textColor="	#000000"
                     android:textSize="18sp" />
             </LinearLayout>
-
-            <TextView
-
-                android:id="@+id/txtrangthaidonhang"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:maxLines="2"
-                android:text="Đang xử lý"
-                android:textColor="	#000000"
-                android:textSize="18sp" />
         </LinearLayout>
-    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
 
     <View
-        android:layout_width="match_parent"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="15dp"
+        android:layout_width="284dp"
+        android:layout_gravity="center"
         android:layout_height="2dp"
-
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
         android:background="@color/black" />
 
      <androidx.recyclerview.widget.RecyclerView
-         android:layout_width="match_parent"
+         android:layout_width="345dp"
          android:layout_margin="10dp"
          android:layout_weight="1"
-
+         android:layout_gravity="center"
          android:id="@+id/rcvSP"
          android:layout_height="0dp"/>
 
     <Button
         android:id="@+id/btncapnhat"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button"
         android:layout_marginLeft="25dp"
         android:layout_marginTop="5dp"
+        android:layout_gravity="center"
         android:layout_marginRight="25dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="20dp"
         android:elevation="5dp"
         android:text="Cập Nhật Trạng Thái" />
 

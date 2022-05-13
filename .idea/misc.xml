@@ -79,13 +79,23 @@
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/drawable/button.xml" value="0.1475" />
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/drawable/button_selector.xml" value="0.142" />
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/drawable/curve_bottom.xml" value="0.142" />
+        <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/drawable/custome_rating.xml" value="0.1365" />
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/drawable/gradient_backgroud.xml" value="0.1475" />
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/drawable/home_danhmuc.xml" value="0.158" />
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/drawable/home_deal.xml" value="0.158" />
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/drawable/home_food.xml" value="0.158" />
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/drawable/home_uathich.xml" value="0.158" />
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/drawable/home_vi.xml" value="0.158" />
+        <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/drawable/ic_baseline_clear_24.xml" value="0.1865" />
+        <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/drawable/ic_baseline_control_point_24.xml" value="0.163" />
+        <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1" />
+        <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.1" />
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.142" />
+        <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/drawable/ic_check_black_24dp.xml" value="0.1865" />
+        <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/drawable/ic_keyboard_arrow_right_white_24dp.xml" value="0.13" />
+        <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/drawable/ic_manager_bill.xml" value="0.163" />
+        <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/drawable/ic_refresh_black_24dp.xml" value="0.1865" />
+        <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/drawable/ic_shopping_cart_black_24dp.xml" value="0.1" />
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/drawable/khung.xml" value="0.158" />
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/drawable/khung2.xml" value="0.158" />
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/font/poppins_bold.xml" value="0.27589743589743587" />
@@ -94,8 +104,8 @@
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/layout/activity_contact.xml" value="0.22780797101449277" />
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/layout/activity_content_bill.xml" value="0.22780797101449277" />
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/layout/activity_content_product.xml" value="0.2" />
-        <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/layout/activity_dangsanpham.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/layout/activity_home.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/layout/activity_dangsanpham.xml" value="0.176" />
+        <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/layout/activity_home_admin.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/layout/activity_maps.xml" value="0.12158054711246201" />
@@ -115,15 +125,15 @@
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/layout/dong_banner.xml" value="0.22780797101449277" />
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/layout/dong_giohang.xml" value="0.264" />
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/layout/dong_hoadon.xml" value="0.22780797101449277" />
-        <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/layout/dong_sanpham.xml" value="0.1" />
-        <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/layout/dong_sanpham_noibat.xml" value="0.1" />
+        <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/layout/dong_sanpham.xml" value="0.16" />
+        <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/layout/dong_sanpham_noibat.xml" value="0.264" />
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/layout/fragment_bill.xml" value="0.22780797101449277" />
-        <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/layout/fragment_cart.xml" value="0.22780797101449277" />
-        <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/layout/fragment_home.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/layout/fragment_cart.xml" value="0.152" />
+        <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/layout/fragment_home.xml" value="0.16" />
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/layout/fragment_profile.xml" value="0.22780797101449277" />
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/layout/fragment_thongtinungdung.xml" value="0.22780797101449277" />
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/menu/menu_dashboard.xml" value="0.25" />
-        <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/menu/menu_logined.xml" value="0.25" />
+        <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/menu/menu_logined.xml" value="0.12403100775193798" />
         <entry key="..\:/Users/le482/AndroidStudioProjects/EEFood/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.158" />
         <entry key="..\:/Users/tinhy/Desktop/Photoshop CS6/ThanhNhanShop/app/src/main/res/drawable/border10.xml" value="0.24512820512820513" />
         <entry key="..\:/Users/tinhy/Desktop/Photoshop CS6/ThanhNhanShop/app/src/main/res/drawable/curve_bottom.xml" value="0.24512820512820513" />

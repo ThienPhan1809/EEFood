@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -36,7 +37,7 @@ public class ContentBillActivity extends AppCompatActivity implements GioHangVie
     private Intent intent;
     private HoaDonModels hoaDonModels;
     private TextView txtmaHD, txthoten, txtdiachi, txtsdt, txttongtien,txtrangthai;
-    private Toolbar toolbar;
+    private TextView toolbar;
     private ImageView hinhanh;
     private Button btncapnhat;
     private GioHangPreSenter gioHangPreSenter;
@@ -49,16 +50,23 @@ public class ContentBillActivity extends AppCompatActivity implements GioHangVie
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_content_bill);
         InitWidget();
         Init();
     }
     // set dữ liệu cho chi tiết hóa đơn
     private void Init() {
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Chi tiết hóa đơn");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+//        setSupportActionBar(toolbar);
+//        getSupportActionBar().setTitle("Chi tiết hóa đơn");
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                finish();
+//            }
+//        });
+        findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
@@ -67,17 +75,17 @@ public class ContentBillActivity extends AppCompatActivity implements GioHangVie
         intent=getIntent();
         hoaDonModels = (HoaDonModels) intent.getSerializableExtra("HD");
         int type = intent.getIntExtra("TYPE",0);
-        txtdiachi.setText("Địa chỉ : "+hoaDonModels.getDiachi());
-        txtmaHD.setText("Mã HD :"+hoaDonModels.getId());
-        txthoten.setText("Họ tên : "+hoaDonModels.getHoten());
-        txtsdt.setText("Liên hệ : "+hoaDonModels.getSdt());
-        txttongtien.setText("Giá tiền: "+NumberFormat.getNumberInstance().format(hoaDonModels.getTongtien()));
+        txtdiachi.setText(hoaDonModels.getDiachi());
+        txtmaHD.setText(hoaDonModels.getId());
+        txthoten.setText(hoaDonModels.getHoten());
+        txtsdt.setText(hoaDonModels.getSdt());
+        txttongtien.setText(NumberFormat.getNumberInstance().format(hoaDonModels.getTongtien()));
 
         switch ((int) hoaDonModels.getType()){
-            case  1: txtrangthai.setText("Trạng Thái : Đang xử lý");break;
-            case  2: txtrangthai.setText("Trạng Thái : Đang giao hàng");break;
-            case  3: txtrangthai.setText("Trạng Thái : Giao Hàng Thành Công");break;
-            case  4: txtrangthai.setText("Trạng Thái : Hủy Đơn Hàng");break;
+            case  1: txtrangthai.setText("Đang xử lý");break;
+            case  2: txtrangthai.setText("Đang giao hàng");break;
+            case  3: txtrangthai.setText("Giao Hàng Thành Công");break;
+            case  4: txtrangthai.setText("Hủy Đơn Hàng");break;
         }
 
 

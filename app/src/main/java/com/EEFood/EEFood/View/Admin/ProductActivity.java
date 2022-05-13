@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.WindowManager;
 
 import com.EEFood.EEFood.Model.SanPhamModels;
 import com.EEFood.EEFood.Presenter.ISanPham;
@@ -25,6 +26,7 @@ public class ProductActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_product);
         rcv = findViewById(R.id.rcv);
         dialog = new ProgressDialog(this); // this = YourActivity
