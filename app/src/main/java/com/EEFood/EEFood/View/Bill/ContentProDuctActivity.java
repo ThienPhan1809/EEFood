@@ -90,7 +90,7 @@ public class ContentProDuctActivity extends AppCompatActivity implements GioHang
     }
 
     @Override
-    public void getDataSanPham(String id, String idsp, String tensp, Long giatien, String hinhanh, String loaisp, Long soluong, String nhasanxuat, Long type, String baohanh) {
+    public void getDataSanPham(String id, String idsp, String tensp, Long giatien, String hinhanh, String loaisp, Long soluong, Long type) {
 
     }
 

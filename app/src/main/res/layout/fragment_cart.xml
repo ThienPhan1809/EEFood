@@ -8,6 +8,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+<!--    <ImageView-->
+<!--        android:id="@+id/back"-->
+<!--        android:scaleX="-1"-->
+<!--        android:src="@drawable/ic_baseline_navigate_next_24"-->
+<!--        android:layout_width="42dp"-->
+<!--        android:layout_height="42dp"/>-->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcvBill"
         android:layout_below="@+id/toolbar"

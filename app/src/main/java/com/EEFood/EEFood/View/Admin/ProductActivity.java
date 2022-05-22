@@ -36,8 +36,8 @@ public class ProductActivity extends AppCompatActivity {
         dialog.setCanceledOnTouchOutside(false);
         sanPhamModels = new SanPhamModels(new ISanPham() {
             @Override
-            public void getDataSanPham(String id, String tensp, Long giatien, String hinhanh, String loaisp, String mota, Long soluong, String nhasanxuat, Long type, String baohanh) {
-                arr_sp.add(new SanPhamModels(id, tensp, giatien, hinhanh, loaisp, mota, soluong, nhasanxuat, type, baohanh));
+            public void getDataSanPham(String id, String tensp, Long giatien, String hinhanh, String loaisp, String mota, Long soluong, Long type) {
+                arr_sp.add(new SanPhamModels(id, tensp, giatien, hinhanh, loaisp, mota, soluong, type));
                 adapter = new ProductAdapter(ProductActivity.this, arr_sp);
                 rcv.setAdapter(adapter);
                 dialog.dismiss();
@@ -49,7 +49,7 @@ public class ProductActivity extends AppCompatActivity {
             }
 
             @Override
-            public void getDataSanPhamNB(String id, String tensp, Long giatien, String hinhanh, String loaisp, String mota, Long soluong, String nhasanxuat, Long type, String baohanh) {
+            public void getDataSanPhamNB(String id, String tensp, Long giatien, String hinhanh, String loaisp, String mota, Long soluong, Long type) {
                 dialog.dismiss();
             }
         });

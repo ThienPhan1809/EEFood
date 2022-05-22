@@ -116,8 +116,8 @@ public class ThongKeDanhMucActivity  extends AppCompatActivity implements SanPha
     }
 
     @Override
-    public void getDataSanPham(String id, String tensp, Long giatien, String hinhanh, String loaisp, String mota, Long soluong, String nhasanxuat, Long type, String baohanh) {
-       arrayList.add(new SanPhamModels(id,tensp,giatien,hinhanh,loaisp,mota,soluong,nhasanxuat,type,baohanh));
+    public void getDataSanPham(String id, String tensp, Long giatien, String hinhanh, String loaisp, String mota, Long soluong, Long type) {
+       arrayList.add(new SanPhamModels(id,tensp,giatien,hinhanh,loaisp,mota,soluong,type));
        sanPhamAdapter = new SanPhamAdapter(this,arrayList,1);
        rCvSP.setLayoutManager(new LinearLayoutManager(this));
        rCvSP.setAdapter(sanPhamAdapter);
@@ -131,7 +131,7 @@ public class ThongKeDanhMucActivity  extends AppCompatActivity implements SanPha
     }
 
     @Override
-    public void getDataSanPhamNB(String id, String tensp, Long giatien, String hinhanh, String loaisp, String mota, Long soluong, String nhasanxuat, Long type, String baohanh) {
+    public void getDataSanPhamNB(String id, String tensp, Long giatien, String hinhanh, String loaisp, String mota, Long soluong, Long type) {
 
     }
 }

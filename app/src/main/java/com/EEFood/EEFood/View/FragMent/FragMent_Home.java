@@ -121,9 +121,8 @@ public class FragMent_Home  extends Fragment implements SanPhamView {
     }
 
     @Override
-    public void getDataSanPham(String id, String tensp, Long giatien, String hinhanh, String loaisp, String mota, Long soluong,
-                               String nhasanxuat, Long type,String baohanh) {
-        arr_sp.add(new SanPhamModels(id,tensp,giatien,hinhanh,loaisp,mota,soluong,nhasanxuat,type,baohanh));
+    public void getDataSanPham(String id, String tensp, Long giatien, String hinhanh, String loaisp, String mota, Long soluong, Long type) {
+        arr_sp.add(new SanPhamModels(id,tensp,giatien,hinhanh,loaisp,mota,soluong,type));
         sanPhamAdapter = new SanPhamAdapter(getContext(),arr_sp);
         rcvSP.setLayoutManager(new GridLayoutManager(getContext(),1));
         rcvSP.setAdapter(sanPhamAdapter);
@@ -136,8 +135,8 @@ public class FragMent_Home  extends Fragment implements SanPhamView {
     }
 
     @Override
-    public void getDataSanPhamNB(String id, String tensp, Long giatien, String hinhanh, String loaisp, String mota, Long soluong, String nhasanxuat, Long type, String baohanh) {
-        arr_sp_nb.add(new SanPhamModels(id,tensp,giatien,hinhanh,loaisp,mota,soluong,nhasanxuat,type,baohanh));
+    public void getDataSanPhamNB(String id, String tensp, Long giatien, String hinhanh, String loaisp, String mota, Long soluong, Long type) {
+        arr_sp_nb.add(new SanPhamModels(id,tensp,giatien,hinhanh,loaisp,mota,soluong,type));
         sanPhamNBAdapter = new SanPhamAdapter(getContext(),arr_sp_nb,2);
         rcvSpNoiBat.setLayoutManager(new LinearLayoutManager(getContext(),RecyclerView.HORIZONTAL,false));
         rcvSpNoiBat.setAdapter(sanPhamNBAdapter);

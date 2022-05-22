@@ -5,5 +5,5 @@ public interface GioHangView {
 
     void OnFail();
 
-    void getDataSanPham(String id, String idsp,String tensp, Long giatien, String hinhanh, String loaisp, Long soluong, String nhasanxuat, Long type, String baohanh);
+    void getDataSanPham(String id, String idsp,String tensp, Long giatien, String hinhanh, String loaisp, Long soluong, Long type);
 }

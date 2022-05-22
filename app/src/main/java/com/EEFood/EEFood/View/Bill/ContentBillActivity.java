@@ -167,8 +167,8 @@ public class ContentBillActivity extends AppCompatActivity implements GioHangVie
     }
 
     @Override
-    public void getDataSanPham(String id, String idsp, String tensp, Long giatien, String hinhanh, String loaisp, Long soluong, String nhasanxuat, Long type, String baohanh) {
-        arrayList.add(new SanPhamModels(id,idsp,tensp,giatien,hinhanh,loaisp,soluong,nhasanxuat,type,baohanh));
+    public void getDataSanPham(String id, String idsp, String tensp, Long giatien, String hinhanh, String loaisp, Long soluong, Long type) {
+        arrayList.add(new SanPhamModels(id,idsp,tensp,giatien,hinhanh,loaisp,soluong,type));
         sanPhamAdapter = new SanPhamAdapter(this,arrayList,1);
         rcvBill.setLayoutManager(new LinearLayoutManager(this));
         rcvBill.setAdapter(sanPhamAdapter);

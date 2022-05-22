@@ -16,9 +16,8 @@ public class SanPhamPreSenter implements  ISanPham{
 
 
     @Override
-    public void getDataSanPham(String id, String tensp, Long giatien, String hinhanh, String loaisp, String mota, Long soluong,
-                               String nhasanxuat, Long type,String baohanh) {
-       callback.getDataSanPham(id,tensp,giatien,hinhanh,loaisp,mota,soluong,nhasanxuat,type,baohanh);
+    public void getDataSanPham(String id, String tensp, Long giatien, String hinhanh, String loaisp, String mota, Long soluong, Long type) {
+       callback.getDataSanPham(id,tensp,giatien,hinhanh,loaisp,mota,soluong,type);
     }
 
     @Override
@@ -27,8 +26,8 @@ public class SanPhamPreSenter implements  ISanPham{
     }
 // truyen dữ liệu qua màn hình
     @Override
-    public void getDataSanPhamNB(String id, String tensp, Long giatien, String hinhanh, String loaisp, String mota, Long soluong, String nhasanxuat, Long type, String baohanh) {
-        callback.getDataSanPhamNB(id,tensp,giatien,hinhanh,loaisp,mota,soluong,nhasanxuat,type,baohanh);
+    public void getDataSanPhamNB(String id, String tensp, Long giatien, String hinhanh, String loaisp, String mota, Long soluong, Long type) {
+        callback.getDataSanPhamNB(id,tensp,giatien,hinhanh,loaisp,mota,soluong,type);
     }
 
     public void HandlegetDataSanPham(String loaisp,int type) {

@@ -4,16 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/btn_add_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_baseline_clear_24" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <ImageView
             android:id="@+id/image_add"
             android:layout_width="match_parent"
             android:layout_height="197dp"
             android:background="@drawable/food" />
-
         <View
             android:backgroundTint="@color/colorPrimary"
             android:layout_marginTop="15dp"
@@ -25,6 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:layout_gravity="center"
             android:layout_marginTop="10dp">
             <TextView
                 android:layout_marginLeft="37dp"
@@ -36,13 +44,7 @@
                 android:textSize="16sp"
                 android:layout_marginRight="80dp"
                 android:fontFamily="@font/poppins" />
-            <ImageView
-                android:id="@+id/btn_add_back"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginStart="10dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:src="@drawable/ic_baseline_clear_24" />
+
             <ImageView
                 android:id="@+id/btn_refresh"
                 android:layout_width="30dp"

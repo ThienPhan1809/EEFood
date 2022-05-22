@@ -70,12 +70,12 @@ public class CartActivity extends AppCompatActivity implements GioHangView {
     }
 
     private void Init() {
-        findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+//        findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                finish();
+//            }
+//        });
         arrayList = new ArrayList<>();
         gioHangPreSenter = new GioHangPreSenter(this);
         gioHangPreSenter.HandlegetDataGioHang();
@@ -237,9 +237,9 @@ public class CartActivity extends AppCompatActivity implements GioHangView {
     }
 
     @Override
-    public void getDataSanPham(String id, String idsp,String tensp, Long giatien, String hinhanh, String loaisp, Long soluong, String nhasanxuat, Long type, String baohanh) {
+    public void getDataSanPham(String id, String idsp,String tensp, Long giatien, String hinhanh, String loaisp, Long soluong, Long type) {
         try{
-            arrayList.add(new SanPhamModels(id,idsp,tensp,giatien,hinhanh,loaisp,soluong,nhasanxuat,type,baohanh));
+            arrayList.add(new SanPhamModels(id,idsp,tensp,giatien,hinhanh,loaisp,soluong,type));
             sanPhamAdapter = new GioHangAdapter(CartActivity.this,arrayList,1);
             rcVBill.setLayoutManager(new LinearLayoutManager(CartActivity.this));
             rcVBill.setAdapter(sanPhamAdapter);

@@ -71,6 +71,8 @@ public class dangsanphamActivity extends AppCompatActivity {
             edtType.setText(sanPhamModels.getType()+"");
             btnEdit.setVisibility(View.VISIBLE);
             btnDel.setVisibility(View.VISIBLE);
+            findViewById(R.id.btn_refresh).setVisibility(View.GONE);
+            findViewById(R.id.btn_save).setVisibility(View.GONE);
             if (!TextUtils.isEmpty(sanPhamModels.getHinhanh())) {
                 Picasso.get().load(sanPhamModels.getHinhanh()).into(imageView);
                 image = sanPhamModels.getHinhanh();

@@ -104,8 +104,8 @@ public class GioHangModels {
                                 callback.getDataSanPham(s.getId(),s.getString("id_sanpham"),d.getString("tensp"),
                                         d.getLong("giatien"),d.getString("hinhanh"),
                                         d.getString("loaisp"),
-                                        s.getLong("soluong"),d.getString("nhasanxuat"),
-                                        d.getLong("type"),d.getString("baohanh"));
+                                        s.getLong("soluong"),
+                                        d.getLong("type"));
 
 
                             }
@@ -211,8 +211,8 @@ public class GioHangModels {
                                 callback.getDataSanPham(s.getId(),s.getString("id_sanpham"),d.getString("tensp"),
                                         d.getLong("giatien"),d.getString("hinhanh"),
                                         d.getString("loaisp"),
-                                        s.getLong("soluong"),d.getString("nhasanxuat"),
-                                        1l,d.getString("baohanh"));
+                                        s.getLong("soluong"),
+                                        1l);
                             }
                         });
                     }
@@ -237,9 +237,7 @@ public class GioHangModels {
                                  public void onSuccess(@NonNull DocumentSnapshot d) {
                                      callback.getDataSanPham(s.getId(),s.getString("id_sanpham"),d.getString("tensp"),
                                              d.getLong("giatien"),d.getString("hinhanh"),
-                                             d.getString("loaisp"),
-                                             s.getLong("soluong"),d.getString("nhasanxuat"),
-                                             1l,d.getString("baohanh"));
+                                             d.getString("loaisp"), s.getLong("soluong"), 1l);
                                  }
                              });
                          }
