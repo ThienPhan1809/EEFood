@@ -19,8 +19,8 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 
 public class HoaDonAdapter extends RecyclerView.Adapter<HoaDonAdapter.ViewHodler> {
-    private Context context;
-    private ArrayList<HoaDonModels> arrayList;
+    private final Context context;
+    private final ArrayList<HoaDonModels> arrayList;
     private  int type = 0;
 
     public HoaDonAdapter(Context context, ArrayList<HoaDonModels> arrayList) {

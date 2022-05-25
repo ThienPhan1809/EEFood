@@ -6,8 +6,8 @@ import com.EEFood.EEFood.Model.SanPhamModels;
 import java.util.ArrayList;
 
 public class GioHangPreSenter implements  IGioHang{
-    private GioHangModels gioHangModels;
-    private GioHangView callback;
+    private final GioHangModels gioHangModels;
+    private final GioHangView callback;
 
     public GioHangPreSenter( GioHangView callback) {
         this.callback = callback;

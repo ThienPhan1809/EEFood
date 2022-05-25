@@ -57,7 +57,7 @@ public class FragMent_Bill  extends Fragment  implements HoaDonView {
 
             @Override
             public void onFinish() {
-                arrayList.clear();;
+                arrayList.clear();
                 if(hoaDonAdapter!=null){
                     hoaDonAdapter.notifyDataSetChanged();
                 }

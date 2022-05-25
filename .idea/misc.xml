@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/EEFood/app/src/main/res/layout/activity_home.xml" value="0.1265625" />
+        <entry key="..\:/EEFood/app/src/main/res/layout/activity_home_admin.xml" value="0.1" />
+        <entry key="..\:/EEFood/app/src/main/res/layout/activity_payment.xml" value="0.1" />
         <entry key="..\:/ThanhNhanShop/app/src/main/res/layout/activity_home.xml" value="0.1793478260869565" />
         <entry key="..\:/ThanhNhanShop/app/src/main/res/layout/activity_home_admin.xml" value="0.1793478260869565" />
         <entry key="..\:/ThanhNhanShop/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />

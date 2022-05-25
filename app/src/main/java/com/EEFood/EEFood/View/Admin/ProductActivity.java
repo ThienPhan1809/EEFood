@@ -20,7 +20,7 @@ public class ProductActivity extends AppCompatActivity {
     ProductAdapter adapter;
     RecyclerView rcv;
     private SanPhamModels sanPhamModels;
-    private ArrayList<SanPhamModels> arr_sp = new ArrayList<>();
+    private final ArrayList<SanPhamModels> arr_sp = new ArrayList<>();
     ProgressDialog dialog;
 
     @Override

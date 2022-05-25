@@ -3,8 +3,8 @@ package com.EEFood.EEFood.Presenter;
 import com.EEFood.EEFood.Model.UserModel;
 
 public class UserPreSenter  implements  IUSER{
-    private UserModel userModel;
-    private  UserView callback;
+    private final UserModel userModel;
+    private final UserView callback;
 
     public UserPreSenter(UserView callback) {
         this.callback = callback;

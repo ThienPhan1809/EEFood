@@ -21,8 +21,8 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 
 public class SanPhamAdapter  extends RecyclerView.Adapter<SanPhamAdapter.ViewHodler> {
-    private Context context;
-    private ArrayList<SanPhamModels> arrayList;
+    private final Context context;
+    private final ArrayList<SanPhamModels> arrayList;
     private  int type = 0;
 
     public SanPhamAdapter(Context context, ArrayList<SanPhamModels> arrayList) {

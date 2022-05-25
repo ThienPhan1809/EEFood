@@ -166,7 +166,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Thống Kê"
+                    android:text="Đăng Xuất"
                     android:textColor="@color/black"
                     android:fontFamily="@font/poppins"
                     android:textSize="16sp"

@@ -19,8 +19,8 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 
 public class GioHangAdapter extends RecyclerView.Adapter<GioHangAdapter.ViewHodler> {
-    private Context context;
-    private ArrayList<SanPhamModels> arrayList;
+    private final Context context;
+    private final ArrayList<SanPhamModels> arrayList;
     private  int type = 0;
 
     public GioHangAdapter(Context context, ArrayList<SanPhamModels> arrayList) {

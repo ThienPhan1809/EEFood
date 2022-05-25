@@ -51,7 +51,7 @@ public class CartActivity extends AppCompatActivity implements GioHangView {
     private GioHangPreSenter gioHangPreSenter;
     private ArrayList<SanPhamModels> arrayList;
     private Button btnthanhtoan;
-    private  String s[]={"Thanh toán khi nhận hàng","Thanh toán MOMO"};
+    private final String[] s ={"Thanh toán khi nhận hàng","Thanh toán MOMO"};
     private  long tongtien = 0;
     private ProgressBar progressBar;
     private  String hoten="",diachi="",sdt="";
@@ -256,7 +256,7 @@ public class CartActivity extends AppCompatActivity implements GioHangView {
         Map<String, Object> eventValue = new HashMap<>();
         //client Required
         long mahd =   System.currentTimeMillis();
-        eventValue.put("merchantname", "Thanh Nhan"); //Tên đối tác. được đăng ký tại https://business.momo.vn. VD: Google, Apple, Tiki , CGV Cinemas
+        eventValue.put("merchantname", "EE-Food"); //Tên đối tác. được đăng ký tại https://business.momo.vn. VD: Google, Apple, Tiki , CGV Cinemas
         eventValue.put("merchantcode", "MOMO1NRV20220112"); //Mã đối tác, được cung cấp bởi MoMo tại https://business.momo.vn
         eventValue.put("amount", tongtien); //Kiểu integer
         eventValue.put("orderId", "order"+mahd); //uniqueue id cho Bill order, giá trị duy nhất cho mỗi đơn hàng
@@ -274,7 +274,7 @@ public class CartActivity extends AppCompatActivity implements GioHangView {
         JSONObject objExtraData = new JSONObject();
         try {
             objExtraData.put("site_code", "008");
-            objExtraData.put("site_name", "Thanh Toán Đồ Điện Tử");
+            objExtraData.put("site_name", "Thanh Toán Món Ăn");
             objExtraData.put("screen_code", 0);
             objExtraData.put("screen_name", "Đặc Biệt");
             String name ="";
@@ -282,7 +282,7 @@ public class CartActivity extends AppCompatActivity implements GioHangView {
                 name+=sanPham.getTensp()+",";
             }
             objExtraData.put("movie_name", name);
-            objExtraData.put("movie_format", "Đồ điện tử");
+            objExtraData.put("movie_format", "Món Ăn");
         } catch (JSONException e) {
             e.printStackTrace();
         }

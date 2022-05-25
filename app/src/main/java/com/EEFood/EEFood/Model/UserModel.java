@@ -10,7 +10,7 @@ import com.EEFood.EEFood.Presenter.IUSER;
 
 public class UserModel {
     private FirebaseAuth firebaseAuth;
-    private  String valid_email="[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+    private final String valid_email="[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     private  String email;
     private  String pass;
     private IUSER callback;

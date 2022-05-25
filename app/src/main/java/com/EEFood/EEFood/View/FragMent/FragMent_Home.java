@@ -52,7 +52,7 @@ public class FragMent_Home  extends Fragment implements SanPhamView {
         try {
             activityCallback = (FragMent_HomeListener) context;
         } catch (ClassCastException e) {
-            throw new ClassCastException(context.toString()
+            throw new ClassCastException(context
                     + " You must implement FirstFragmentListener");
         }
     }

@@ -15,8 +15,8 @@ import com.EEFood.EEFood.R;
 import java.util.ArrayList;
 
 public class BannerAdapter  extends PagerAdapter {
-    private Context context;
-    private ArrayList<String> arrayList;
+    private final Context context;
+    private final ArrayList<String> arrayList;
 
     public BannerAdapter(Context context, ArrayList<String> arrayList) {
         this.context = context;

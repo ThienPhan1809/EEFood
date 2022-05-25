@@ -28,7 +28,7 @@ public class BillADMiNActivity extends AppCompatActivity implements HoaDonView {
 
     private Toolbar toolbar;
     private RecyclerView rcvBill;
-    private  String[] s = {"Tất cả","Đang xử lý","Đang giao hàng","Giao hàng thành công","Hủy hàng"};
+    private final String[] s = {"Tất cả","Đang xử lý","Đang giao hàng","Giao hàng thành công","Hủy hàng"};
     private Spinner spinner;
     private HoaDonPreSenter hoaDonPreSenter;
     private ArrayList<HoaDonModels> arrayList;

@@ -3,8 +3,8 @@ package com.EEFood.EEFood.Presenter;
 import com.EEFood.EEFood.Model.SanPhamModels;
 
 public class SanPhamPreSenter implements  ISanPham{
-    private SanPhamModels sanPhamModels;
-    private  SanPhamView callback;
+    private final SanPhamModels sanPhamModels;
+    private final SanPhamView callback;
     public   SanPhamPreSenter(SanPhamView callback){
         this.callback=callback;
         sanPhamModels = new SanPhamModels(this);

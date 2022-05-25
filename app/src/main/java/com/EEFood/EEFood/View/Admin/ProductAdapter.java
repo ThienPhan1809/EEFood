@@ -21,8 +21,8 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 
 public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHolder> {
-    private Activity context;
-    private ArrayList<SanPhamModels> arrayList;
+    private final Activity context;
+    private final ArrayList<SanPhamModels> arrayList;
 
     public ProductAdapter(Activity context, ArrayList<SanPhamModels> arrayList) {
         this.context = context;

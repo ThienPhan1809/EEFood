@@ -4,8 +4,8 @@ import com.EEFood.EEFood.Model.HoaDonModels;
 
 public class HoaDonPreSenter  implements IHoaDon{
 
-    private HoaDonModels hoaDonModels;
-    private HoaDonView callback;
+    private final HoaDonModels hoaDonModels;
+    private final HoaDonView callback;
 
     public HoaDonPreSenter(HoaDonView callback) {
         this.callback = callback;
