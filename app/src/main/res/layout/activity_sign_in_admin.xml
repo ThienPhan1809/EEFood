@@ -10,6 +10,7 @@
         android:scaleX="-1"
         android:src="@drawable/ic_baseline_navigate_next_24"
         android:layout_width="42dp"
+        android:visibility="gone"
         android:layout_height="42dp"/>
     <TextView
         android:layout_width="wrap_content"
