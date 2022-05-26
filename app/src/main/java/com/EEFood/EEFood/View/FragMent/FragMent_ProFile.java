@@ -23,6 +23,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.EEFood.EEFood.View.HomeActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -122,6 +123,13 @@ public class FragMent_ProFile  extends Fragment implements  View.OnClickListener
             }
         });
 
+        view.findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getContext(), HomeActivity.class);
+                startActivity(intent);
+            }
+        });
         txtdiachi.setOnClickListener(this);
         txthoten.setOnClickListener(this);
         txtsdt.setOnClickListener(this);

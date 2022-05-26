@@ -256,7 +256,7 @@ public class CartActivity extends AppCompatActivity implements GioHangView {
         Map<String, Object> eventValue = new HashMap<>();
         //client Required
         long mahd =   System.currentTimeMillis();
-        eventValue.put("merchantname", "Thanh Nhan"); //Tên đối tác. được đăng ký tại https://business.momo.vn. VD: Google, Apple, Tiki , CGV Cinemas
+        eventValue.put("merchantname", "EEFood"); //Tên đối tác. được đăng ký tại https://business.momo.vn. VD: Google, Apple, Tiki , CGV Cinemas
         eventValue.put("merchantcode", "MOMO1NRV20220112"); //Mã đối tác, được cung cấp bởi MoMo tại https://business.momo.vn
         eventValue.put("amount", tongtien); //Kiểu integer
         eventValue.put("orderId", "order"+mahd); //uniqueue id cho Bill order, giá trị duy nhất cho mỗi đơn hàng
